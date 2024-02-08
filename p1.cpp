@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     
- 
+    
     cout<<"dol->rupee ENTER 1"<<endl;
     cout<<"feet->inches ENTER 2"<<endl;
     cout<<"inch->cemi ENTER 3"<<endl;
