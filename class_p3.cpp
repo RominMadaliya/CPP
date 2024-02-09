@@ -24,7 +24,7 @@ class test
     {
         cout<<"Enter test code :";
         cin>>testcode;
-        cin.ignore();
+       
         cout<<"Enter description :";
         getline(cin,discription);
         cout<<"Enter number of candidate:";
