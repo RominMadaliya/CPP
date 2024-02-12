@@ -19,13 +19,57 @@ class REPORT
 {
      int adno;
      char name[20];
-     float sub[5];
-     float avarge;;
-     float getavg(float sub[])
      
+     float marks[5];
+     float avarge;
+     float total=0;
+     float getavg(float sub[])
      {
-        float total=0;
+       // float total=0;
+        for(int i=0;i<5;i++)
+        {
+         total+=marks[i];
+        }
+         avarge=total/5;
+         return avarge;
+     }
+
+     public:
+
+     void readinfo()
+     {
+      cout<<"Enetr the addmission no :";
+      cin>>adno;
+      cin.ignore();
+      cout<<"Enter the student name :";
+      gets(name);
+      for(int i=0;i<5;i++)
+      {
+         cout<<"Enter the marks of "<<i+1<<":";
+         cin>>marks[i];
+      }
+      getavg(marks);
+     }
+
+     void display()
+     {
+         cout<<"Addmission number is :"<<adno<<endl;
+         cout<<"Student name is :"<<name<<endl;
+         cout<<"Total Mark is :"<<total<<endl;
+         cout<<"Avarage is :"<<avarge<<endl;
+         
+
      }
 
 
 };
+
+int main()
+{
+   REPORT data;
+   data.readinfo();
+
+   cout <<"---------------------"<<endl;
+   data.display();
+   return 0;
+}
