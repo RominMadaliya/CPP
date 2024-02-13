@@ -44,6 +44,11 @@ class test
                 
     };
 
+        
+     ~test()
+     {
+      cout<<"Deallocate the data  ";
+     }
 
 };
 
@@ -51,7 +56,7 @@ int main()
 {
     test data;
     // data.schedule();
-    // cout<<"-----------------"<<endl;
+    cout<<"-----------------"<<endl;
     data.disptest();
 
     return 0;

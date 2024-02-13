@@ -46,6 +46,11 @@ class batsman
 
     }
     
+    
+     ~batsman()
+     {
+      cout<<"Deallocate the data  ";
+     }
 
 };
 
@@ -53,7 +58,7 @@ int main()
 {
     batsman data;
     // data.readdata();
-    // cout<<"-----------------"<<endl;
+    cout<<"-----------------"<<endl;
     data.displaydata();
 
     return 0;

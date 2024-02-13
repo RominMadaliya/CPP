@@ -32,6 +32,7 @@ class student
         cout<<"Total Mark is :"<<total<<endl;
 
     }
+    ~student();
 
 };
 
@@ -52,6 +53,12 @@ student :: student(void)
 
 }
 
+
+    student ::~ student(void)
+     {
+      cout<<"Deallocate the data  ";
+     }
+
 float student :: ctotal(int eng,int math,int sci)
 {
     total=eng+math+sci;
@@ -65,7 +72,7 @@ int main()
     student details;
    // details.takedata();
 
-    // cout<<"------------------"<<endl;
+     cout<<"------------------"<<endl;
     details.showdata();
 
     return 0;

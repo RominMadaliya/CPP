@@ -36,8 +36,8 @@ class REPORT
 
      public:
 
-    void readinfo()
- 
+    // void readinfo()
+    REPORT()
      {
       cout<<"Enetr the addmission no :";
       cin>>adno;
@@ -62,7 +62,10 @@ class REPORT
 
      }
 
-    
+     ~REPORT()
+     {
+      cout<<"Deallocate the data  ";
+     }
 
 
 };
@@ -70,7 +73,7 @@ class REPORT
 int main()
 {
    REPORT data;
-  data.readinfo();
+  // data.readinfo();
 
    cout <<"---------------------"<<endl;
    data.display();
