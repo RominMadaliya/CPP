@@ -1,39 +1,31 @@
-#include<iostream>
-
-using namespace std;
-
-class romin
+#include<stdio.h>
+#include<stdlib.h>
+int leniar_search()
 {
-
-    int a,b;
-    public:
-
-    romin(int a1,int b1)
+    int a[50],i,b;
+    for(i=0;i<20;i++)
     {
-            
-        a=a1;
-        b=b1;
-    };
-
-    romin(int c)
-    {
-        a=c;
-        b=1;
-    };
-
-    void printdata()
-    {
-        cout<<"value a is :"<<a<<endl;
-        cout<<"value b is :"<<b<<endl;
-
+        a[i] = rand() %50;
+        printf("%d ",a[i]);
     }
-};
-
-
+    printf("enter number : ");
+    scanf("%d",&b);
+    for(i=0;i<20;i++)
+    {
+        if(a[i]==b)
+        
+        {
+            printf("%d ",i);
+            
+        }
+       if(i == 20)
+       {
+         printf("sorry .................this value not ");
+       }
+       
+    }
+}    
 int main()
 {
-    romin data1(30,40);
-    data1.printdata();
-    romin data2(100);
-    data2.printdata();
+    leniar_search();
 }
