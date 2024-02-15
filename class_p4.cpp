@@ -28,18 +28,19 @@ class FLIGHT
     {
         if(distance<=1000)
         {
-            fuel=500;
+            fuel=(distance*500)/1000 ;
         }
         else if(distance>1000 && distance<=2000)
         {
-            fuel =1100;
+            distance=distance-1000 ;
+            fuel =(distance*1100)/2000+500;
         }
         else if (distance>2000)
         {
-            fuel=2200;
+            distance=distance-2000;
+            fuel=(distance*2200)/2000+1600;
         }
     }
-
 
     public:
     void feedinfo()
