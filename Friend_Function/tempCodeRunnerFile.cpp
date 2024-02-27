@@ -1,1 +1,0 @@
-riend num number(num t1,num t2);
