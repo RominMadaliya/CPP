@@ -8,16 +8,17 @@ class num
     public:
     void adddata()
     {
-        cout<<"add a data :";
+        cout<<endl<<"add a data :";
         cin>>a;
         cout<<"add b data :";
         cin>>b;
     }
 
-    void printdata()
+    void printdata11()
     {
-        cout <<"The value of a is :"<<a;
-        cout <<"The value of b is :"<<b;
+       cout << "The value of a is " << a << endl;
+       cout << "The value of b is  " << b << endl ;
+
     }
 };
 
@@ -28,9 +29,12 @@ int main()
     {
         a1[i].adddata();
     }
+
     for(int i=0;i<3;i++)
     {
-        a1[i].printdata();
+        a1[i].printdata11();
+            
     }
+
     return 0;
 }
