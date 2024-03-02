@@ -28,13 +28,13 @@ public:
              << "Hii" << '\t' << Name << ",Yor Account Details" << endl;
 
         cout << endl
-             << "Name :" << Name;
+             << "Name :  " << Name;
         cout << endl
-             << "Account Number :" << Account_Number;
+             << "Account Number :  " << Account_Number;
         cout << endl
-             << "IFSC Code :" << Ifsc_code;
+             << "IFSC Code :  " << Ifsc_code;
         cout << endl
-             << "Account Balance :" << Account_Balance;
+             << "Account Balance :  " << Account_Balance;
     }
 
     void Deposit_Amount()
