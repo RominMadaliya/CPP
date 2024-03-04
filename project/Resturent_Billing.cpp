@@ -116,8 +116,8 @@ int main()
     Menu[5] = Resturent_Item{"French Onion Soup", 230.00};
     Menu[6] = Resturent_Item{"Manchow Soup", 230.00};
     Menu[7] = Resturent_Item{"Paneer Chilly ", 230.00};
-    Menu[8] = Resturent_Item{"Kaju Kari", 230.00};
-    Menu[9] = Resturent_Item{"Kaju Kari", 230.00};
+    Menu[8] = Resturent_Item{" Veg. Chilly ", 230.00};
+    Menu[9] = Resturent_Item{"Paneer Manchurian", 230.00};
     Menu[10] = Resturent_Item{"Kaju Kari", 230.00};
     Menu[11] = Resturent_Item{"Kaju Kari", 230.00};
     Menu[12] = Resturent_Item{"Kaju Kari", 230.00};
@@ -178,6 +178,7 @@ int main()
 
         else if (Number == 2)
         {
+          reorder:
             int Dish_Numeber;
             int qty;
 
@@ -208,10 +209,31 @@ int main()
             Reciepe_no[count] = Menu[Dish_Numeber].Calculator(qty);
 
             cout << endl
+                 << "------------------------------------------------------------------------------------------------------------------------------------" <<endl;
+            cout << " YOUR ORDER IS CONFORMED";
+            cout << endl
                  << "------------------------------------------------------------------------------------------------------------------------------------" << endl
                  << endl;
-            cout << " YOUR ORDER IS CONFORMED";
             count++;
+
+            int y;
+
+         
+
+            cout << endl
+                 << "IF YOU WANT TO CONTINIUE PREE '1' AND IF YOU WANT TO EXIT PRESS '0'  :  "<<endl;
+            cin >> y;
+
+            if(y==0)
+            {
+               goto start;
+            }
+            else if(y==1)
+            {
+               goto reorder;
+            }
+          
+
         }
 
         else if (Number == 3)
