@@ -109,21 +109,24 @@ int main()
 
     Resturent_Item Menu[50];
 
-    Menu[1] = Resturent_Item{"Tomato Soup", 230.00};
-    Menu[2] = Resturent_Item{"Cream of Mushroom Soup ", 230.00};
-    Menu[3] = Resturent_Item{"Lentil Soup", 230.00};
-    Menu[4] = Resturent_Item{"VegetableSoup", 230.00};
-    Menu[5] = Resturent_Item{"French Onion Soup", 230.00};
-    Menu[6] = Resturent_Item{"Manchow Soup", 230.00};
-    Menu[7] = Resturent_Item{"Paneer Chilly ", 230.00};
-    Menu[8] = Resturent_Item{" Veg. Chilly ", 230.00};
-    Menu[9] = Resturent_Item{"Paneer Manchurian", 230.00};
-    Menu[10] = Resturent_Item{"Kaju Kari", 230.00};
-    Menu[11] = Resturent_Item{"Kaju Kari", 230.00};
-    Menu[12] = Resturent_Item{"Kaju Kari", 230.00};
-    Menu[13] = Resturent_Item{"Kaju Kari", 230.00};
-    Menu[14] = Resturent_Item{"Kaju Kari", 230.00};
-    Menu[15] = Resturent_Item{"Kaju Kari", 230.00};
+    Menu[1] = Resturent_Item{"Tomato Soup", 100.00};
+    Menu[2] = Resturent_Item{"Cream of Mushroom Soup ", 100.00};
+    Menu[3] = Resturent_Item{"Lentil Soup", 120.00};
+    Menu[4] = Resturent_Item{"VegetableSoup", 130.00};
+    Menu[5] = Resturent_Item{"French Onion Soup", 140.00};
+    Menu[6] = Resturent_Item{"Manchow Soup", 100.00};
+    Menu[7] = Resturent_Item{"Paneer Chilly ", 125.00};
+    Menu[8] = Resturent_Item{" Veg. Chilly ", 120.00};
+    Menu[9] = Resturent_Item{"Paneer Manchurian", 125.00};
+    Menu[10] = Resturent_Item{"Veg. Munchurian ", 100.00};
+    Menu[11] = Resturent_Item{"Veg.Sizwan ", 100.00};
+    Menu[12] = Resturent_Item{"Veg. Hong-Kong ", 130.00};
+    Menu[13] = Resturent_Item{"Combination Rice ", 125.00};
+    Menu[14] = Resturent_Item{"Sizwan Noodles", 120.00};
+    Menu[15] = Resturent_Item{"Hakka Noodles", 125.00};
+    Menu[15] = Resturent_Item{" Veg. Fried Rice ", 100.00};
+    Menu[15] = Resturent_Item{"Sizwan Rice", 100.00};
+    Menu[15] = Resturent_Item{"Hong-Kong Fried Rice", 130.00};
 
     int Number;
     int count = 0;

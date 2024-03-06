@@ -28,6 +28,10 @@ class FLIGHT
     {
         if(distance<=1000)
         {
+           
+           
+           
+           
             fuel=(distance*500)/1000 ;
         }
         else if(distance>1000 && distance<=2000)
@@ -75,5 +79,5 @@ int main()
     data.feedinfo();
     cout<<"---------------------"<<endl;
     data.showinfo();
-    return 0;
+   
 }
